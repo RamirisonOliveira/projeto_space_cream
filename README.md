@@ -1,7 +1,7 @@
 <h1 align="center"> Space Cream </h1>
 
 <p align="center">
-Página feita com intuito de treinar alguns conhecimentos entre HTML, CSS E JAVASCRIPT e conceitos como mobile first, transições e tranformações e animação em CSS<br/>
+Página feita com intuito de treinar alguns conhecimentos entre HTML, CSS E JAVASCRIPT e conceitos como mobile first, transições e transformações e animação em CSS<br/>
 </p>
 
 <p align="center">

@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --ff-heading:'Staatliches';
+  --ff-texting:'Palanquin', sans-serif;
+
+  --hue: 274;
+  --bg-primary:hsl(var(--hue), 100%, 97%);
+  --fc-primary: hsl(var(--hue), 0%, 100%);
+  --fc-secundary:hsl(var(--hue), 84%, 12%);
+
+  font-size: 62.5%;
+  --fs-body: 2rem;
+  --fs-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
+}
+
+body{
+  font-family: var(--ff-texting);
+  color: var(--fc-secundary);
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.8rem;
+  background-color: var(--bg-primary);
+}
+
+body::before{
+  content: '';
+  width: 100%;
+  height: 29.5rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #8E9AAF;
+}
+
+button{
+  border: none;
+  width: 100%;
+  height: 4.9rem;
+
+  position: absolute;
+  margin-top: auto 2.4rem;
+  top: 22.1rem;
+  left: 0;
+  z-index: -1;
+  background: #CBC0D3;
+  animation: topdown 700ms 650ms backwards;
+}
+
+.page{
+  height: 21.1rem;
+  width: 21.1rem;
+
+  margin: 3.2rem auto 3.6rem;
+}
+
+img{
+  animation: topdown 700ms 350ms backwards;
+}
+
+img:hover{
+  transform: scale(1.1);
+  transition: 200ms;
+}
+
+header h1 {
+  font-family: var(--ff-heading);
+  color: var(--fc-primary);
+  font-size: var(--fs-heading);
+  line-height: 3.4rem;
+  letter-spacing: 0.1em;
+  animation: topdown 350ms;
+  text-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+main{
+  width: 32.0rem;
+  height: 164.2rem;
+  text-align: center;
+  margin: 1.4rem auto 6.0rem;
+  display: grid;
+  gap: 3.2rem;
+  animation: downtop 700ms 900ms backwards;
+}
+
+p{
+  width: 30.5rem;
+  height: 5.5rem;
+  font-size: var(--fs-body);
+  line-height: 1.3em;
+  margin: 2.2em auto 4.2em;
+}
+
+.menu{
+  position: relative;
+
+  font-family: var(--ff-heading);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.menu img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.2rem;
+
+  transition: all 200ms;
+}
+
+.menu img:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.menu h2{
+  position: absolute;
+  right: 6.49%;
+  top: 6.46%;
+  transition: all 200ms;
+}
+
+.menu h2 span{
+  width: 11.2rem;
+  height: 3.5rem;
+
+  background: var(--fc-primary);
+  border-radius: 2.0rem;
+  padding: 0 1.3rem;
+}
+
+.menu h2:hover{
+  transform: scale(1.1);
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
